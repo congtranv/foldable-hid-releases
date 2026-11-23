@@ -1,0 +1,57 @@
+name: Bug Report / Báo lỗi
+description: Report a bug or issue in Foldable HID Controller / Báo cáo lỗi khi sử dụng ứng dụng
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the bug / Mô tả lỗi
+      description: A clear and concise description of what the bug is. / Mô tả ngắn gọn và rõ ràng lỗi bạn gặp phải.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / Các bước tái hiện
+      description: Steps to reproduce the behavior / Các bước dẫn đến lỗi
+      placeholder: |
+        1. Connect via...
+        2. Tap on...
+        3. See error
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior / Kết quả mong đợi
+      description: What you expected to happen / Điều bạn mong đợi sẽ xảy ra
+  - type: input
+    id: device
+    attributes:
+      label: Device & Android version / Thiết bị & Phiên bản Android
+      placeholder: e.g. OnePlus Open, Android 15
+    validations:
+      required: true
+  - type: input
+    id: app_version
+    attributes:
+      label: App version / Phiên bản ứng dụng
+      placeholder: e.g. v1.0.0
+    validations:
+      required: true
+  - type: dropdown
+    id: connection_mode
+    attributes:
+      label: Connection mode / Chế độ kết nối
+      options:
+        - Bluetooth HID
+        - Bluetooth SPP
+        - Wi-Fi LAN
+        - USB Tethering / ADB
+        - Other / Khác
+  - type: textarea
+    id: logs
+    attributes:
+      label: Screenshots or additional context / Ảnh chụp màn hình hoặc thông tin bổ sung
+      description: Paste logs or drag & drop screenshots here if applicable.
