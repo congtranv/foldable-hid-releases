@@ -1,0 +1,22 @@
+name: Feature Request / Yêu cầu tính năng
+description: Suggest a new feature or improvement / Đề xuất tính năng mới hoặc cải tiến
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or motivation / Vấn đề hoặc lý do
+      description: Is your feature request related to a problem? / Tính năng này giải quyết vấn đề gì?
+  - type: textarea
+    id: solution
+    attributes:
+      label: Describe the feature you'd like / Mô tả tính năng mong muốn
+      description: A clear and concise description of what you want to happen. / Mô tả rõ ràng tính năng bạn muốn có.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context / Thông tin bổ sung
+      description: Add any other context, mockups, or screenshots about the feature request.
